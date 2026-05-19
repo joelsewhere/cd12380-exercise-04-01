@@ -99,7 +99,7 @@
 
 
 #     # Call the first task to push the list of table prefixes onto XCom
-#     table_keys = capture_landing_keys()
+#     table_keys = capture_landing_keys(S3_BUCKET)
 #     # Call the second task with the bucket and the prefix list to produce the per-table params
 #     table_params = determine_format(S3_BUCKET, table_keys)
 #     # Use GlueJobOperator.partial(...).expand_kwargs(...) to fan out one Glue job per table.
